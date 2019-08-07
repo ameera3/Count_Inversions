@@ -1,10 +1,10 @@
 # Count_Inversions
 
-##Usage 
+## Usage 
 
 To compile, type "make". To run the program, type "./countInversions inputFile".
 
-##Introduction
+## Introduction
 
 The command line program countInversions.cpp takes in one parameter, an input filename.
 The input file specified by the input filename should contain the numbers 1 through n in some
