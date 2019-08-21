@@ -37,6 +37,8 @@ unsigned int countLines(const char* filename)
         	++lineCount;
 	}
 
+	delete in;
+
 	return lineCount;
 }
 
@@ -137,7 +139,7 @@ unsigned int mergeSort(unsigned int arr[], unsigned int l, unsigned int r)
 
 }
 
-unsigned int countInversions(const char* inFile, int n)
+unsigned int countInversions(const char* inFile, unsigned int n)
 {
 
 	// dynamically allocate an array with n entries
@@ -168,7 +170,7 @@ unsigned int countInversions(const char* inFile, int n)
 	unsigned int numberInversions = mergeSort(arr, 0, n-1);
 
 	// no memory leaks here
-        delete[] arr;
+        free(arr);
 
 	// close input file 
 	fclose(in);
